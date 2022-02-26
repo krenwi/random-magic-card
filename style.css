@@ -19,8 +19,12 @@ section {
   margin: 0.5em;
 }
 
-#pulledCard {
+#renderedCardSide {
   order: 1;
+}
+
+#pulledCard {
+  order: 2;
 }
 
 #card {
@@ -36,7 +40,6 @@ section {
   height: fit-content;
   font-size: 12px;
   color: black;
-  order: 2;
   border: 1em solid black;
 }
 
