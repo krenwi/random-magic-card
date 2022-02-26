@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-  --max-card-width: 67vh; /*400px;*/
+  --max-card-width: 70vh; /*400px;*/
   --font-size: calc(var(--max-card-width) * 0.03); /*12px;*/
   --card-width: calc(var(--max-card-width) * 0.8);
   --card-height: calc(var(--card-width) * 1.4);
