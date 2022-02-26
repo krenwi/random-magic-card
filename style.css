@@ -1,0 +1,213 @@
+body {
+  /*max-width: 25em;*/
+  background-color: #222;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+:root {
+  --max-card-width: 30em; /*400px;*/
+  --font-size: 12px; /*16px;*/
+  --card-width: calc(var(--max-card-width) * 0.8);
+  --card-height: calc(var(--card-width) * 1.4);
+}
+
+section {
+  margin: 0.5em;
+}
+
+#pulledCard {
+  order: 1;
+}
+
+#card {
+  display: block;
+  border-radius: calc(var(--max-card-width) * 0.05); /*20px*/
+  height: var(--card-height);
+  width: var(--card-width);
+  margin: 0em auto;
+}
+
+#renderedCard {
+  width: calc(var(--card-width) * 0.9);
+  height: fit-content;
+  font-size: 12px;
+  color: black;
+  order: 2;
+  border: 1em solid black;
+}
+
+.bar {
+  margin: 0.4em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /*color: white;*/
+}
+
+#title {
+  font-size: 1.4em;
+  justify-content: left;
+  display: flex;
+  font-family: 'magicthe-gathering-regular', 'Magic:the Gathering', MPlantin, serif;
+  padding-top: 0.5em;
+  position: absolute;
+}
+
+#cost {
+  display: flex;
+  font-size: 1.4em !important;
+  padding: 0.05em;
+  margin-left: auto;/*
+  margin: 0.1em;
+  margin-top: 0.2em;
+  width: 1.6em !important;
+  height: 1.6em !important;
+  line-height: 1.1em !important;
+  vertical-align: text-top !important;*/
+}
+
+#art {
+  margin: 0 0.8em;
+  width: calc(var(--card-width) * 0.9 - 1.6em);
+}
+
+#type {
+  font-family: /*'Plantin', 'Matrix', */'Beleren2016', 'MPlantin', serif;
+  font-weight: 100;
+  font-size: 1.0em;
+}
+
+#rarity {
+  text-transform: uppercase;
+  color: black;
+  padding: 0 0.2em;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: /*'Plantin', */ 'Matrix','Beleren2016', 'MPlantin', serif;
+}
+
+#textBox {
+  font-weight: 100;
+  line-height: 1.0em;
+  font-size: 1.2em;
+  margin: 0.6em;
+  font-family: 'EB Garamond', 'Plantin', 'MPlantin', Georgia, "Times New Roman", serif;
+}
+
+#oracle {
+  /*color: white;*/
+  margin: 0.4em;
+  white-space: pre-wrap;
+}
+#oracle > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+#flavour {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0.5em 0.4em 0.5em;
+  /*font-family: 'Plantin Light', 'Plantin Std', 'Plantin',  Georgia, "Times New Roman", serif;*/
+}
+#flavour > p {
+  margin: 0;
+}
+
+#bottomBar {
+  align-items: initial;
+}
+
+#artist {
+  font-size: 0.9em;
+  font-weight: normal;
+  position: absolute;
+  margin-top: 0;
+  font-family: 'Plantin', serif;
+  /*margin-right: auto;*/
+}
+
+#date {
+  font-size: 0.6em;
+  position: absolute;
+  margin-top: 1.4em;
+  /*margin-right: auto;*/
+}
+
+#power {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: 'MPlantin', Georgia, 'Times New Roman', serif;
+  margin-left: auto;
+}
+
+#blank {
+  height: 1.8em;
+}
+
+.ms-cost {
+  font-size: 0.7em !important;
+  padding: 0.05em;
+  margin: 0.1em;
+  margin-top: 0.4em;
+  width: 1.1em !important;
+  height: 1.1em !important;
+  line-height: 1.1em !important;
+  vertical-align: text-top !important;
+}
+
+.buttonLine {  
+  display: flex;
+  /*transition: box-shadow .1s linear, margin-top .1s linear;*/
+}
+
+.buttons {
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  padding: 0.1em 0.4em;
+  background: #000;
+  color: #db8514;
+  font-family: 'Bangers';
+  text-decoration: none;
+  /*transition: box-shadow .1s linear, margin-top .1s linear;*/
+}
+
+#link {
+  margin-right: auto;
+}
+
+#button {
+  margin-left: auto;
+}
+
+#card.loading {
+  opacity: .7;
+}
+
+#card.loading+#loadingIcon {
+  opacity: 1;
+  animation: spin 2s linear infinite;
+}
+
+#loadingIcon {
+  position: absolute;
+  opacity: 0;
+  top: 12em;
+  left: calc(50% - 3em);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(359deg);
+  }
+}
