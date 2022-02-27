@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Magic:the Gathering';
-  src: url('/fonts/magic.ttf') format('truetype');
+  src: url('/fonts/magic.ttf');
 }
 
 @font-face {
@@ -33,16 +33,23 @@ body {
 }
 
 :root {
-  --max-card-width: 150vmin; /*400px;*/
-  --font-size: calc(var(--max-card-width) * 0.028); /*12px;*/
-  --card-width: calc(var(--max-card-width) * 0.6667); /**/
+  --max-card-width: 30em;
+  --font-size: calc(var(--max-card-width) * 0.038);
+  --card-width: calc(var(--max-card-width) * 1);
   --card-height: calc(var(--card-width) * 1.4);
 }
 
 section {
   margin: 0.5em;
 }
-
+/*
+.sectionBlocks {
+  height: 100vh;
+  max-height: 100vw;
+  width: 71.42vw;
+  max-width: 71.42vh;
+}
+*/
 #renderedCardSide {
   order: 1;
 }
@@ -56,7 +63,8 @@ section {
   border-radius: calc(var(--max-card-width) * 0.05); /*20px*/
   /*height: var(--card-height);*/
   width: var(--card-width);
-  margin: 0em auto;
+  margin: 0em auto;/*
+  max-height: 96vh;*/
 }
 
 #renderedCard {
@@ -125,6 +133,7 @@ section {
   font-size: 1.2em;
   margin: 0.6em;
   font-family: 'EB Garamond', 'Plantin', 'MPlantin', Georgia, "Times New Roman", serif;
+  background-color: #FFFFFF44;
 }
 
 #oracle {
@@ -164,7 +173,7 @@ section {
 #date {
   font-size: 0.6em;
   position: absolute;
-  margin-top: 1.4em;
+  margin-top: 1.5em;
   /*margin-right: auto;*/
 }
 
