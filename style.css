@@ -4,11 +4,11 @@
 }
 
 @font-face {
-  font-family: 'MPlantin';
+  font-family: 'MPlantin1';
   src: url('fonts/MPlantin.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'MPlantin';
+  font-family: 'MPlantin1';
   src: url('fonts/MPlantin-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -119,7 +119,7 @@ section {
 }
 
 #type {
-  font-family: /*'Plantin', 'Matrix', */'Beleren2016', 'MPlantin', serif;
+  font-family: /*'Plantin', 'Matrix', */'Beleren2016', 'MPlantin1', serif;
   font-weight: 100;
   font-size: 1.0em;
 }
@@ -130,7 +130,7 @@ section {
   padding: 0 0.2em;
   font-weight: bold;
   font-size: 1.0em;
-  font-family: /*'Plantin', */ 'Matrix', 'Beleren2016', 'MPlantin', serif;
+  font-family: /*'Plantin', */ 'Matrix', 'Beleren2016', 'MPlantin1', serif;
 }
 
 #textBox {
@@ -138,15 +138,15 @@ section {
   line-height: 1.0em;
   font-size: 1.2em;
   margin: 0.6em;
-  font-family: 'EB Garamond', 'Plantin', 'MPlantin', Georgia, "Times New Roman", serif;
+  font-family: 'EB Garamond', 'Plantin', 'MPlantin1', Georgia, "Times New Roman", serif;
   background-color: #FFFFFF44;
+  padding: 0.01em 0;
 }
 
 #oracle {
   /*color: white;*/
   margin: 0.4em;
   white-space: pre-wrap;
-  padding: 0.2em 0;
 }
 #oracle > p {
   margin-top: 0.4em;
@@ -158,7 +158,7 @@ section {
   font-style: italic;
   font-weight: 100;
   margin: 0.5em 0.4em 0.5em;
-  font-family: 'MPlantin',  Georgia, "Times New Roman", serif;
+  font-family: 'MPlantin1',  Georgia, "Times New Roman", serif;
 }
 #flavour > p {
   margin: 0;
@@ -187,7 +187,7 @@ section {
 #power {
   font-size: 1.4em;
   font-weight: bold;
-  font-family: 'MPlantin', Georgia, 'Times New Roman', serif;
+  font-family: 'MPlantin1', Georgia, 'Times New Roman', serif;
   margin-left: auto;
 }
 
