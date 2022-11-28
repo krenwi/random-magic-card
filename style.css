@@ -140,6 +140,7 @@ section {
   /*color: white;*/
   margin: 0.4em;
   white-space: pre-wrap;
+  padding: 0.2em 0;
 }
 #oracle > p {
   margin-top: 0.4em;
