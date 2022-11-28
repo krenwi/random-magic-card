@@ -5,7 +5,12 @@
 
 @font-face {
   font-family: 'MPlantin';
-  src: url('/fonts/MPlantin.ttf') format('truetype');
+  src: url('fonts/MPlantin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MPlantin';
+  src: url('fonts/MPlantin-Italic.ttf');
+  font-style: italic;
 }
 
 @font-face {
