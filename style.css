@@ -95,8 +95,8 @@ section {
   font-size: 1.4em;
   justify-content: left;
   display: flex;
-  font-family: 'Magic:the Gathering', MPlantin, serif;
-  padding-top: 0.5em;
+  font-family: MPlantin, 'Magic:the Gathering', serif;
+  padding-top: 0.1em;
   position: absolute;
 }
 
@@ -119,9 +119,9 @@ section {
 }
 
 #type {
-  font-family: /*'Plantin', 'Matrix', */'Beleren2016', 'MPlantin1', serif;
-  font-weight: 100;
-  font-size: 1.0em;
+  font-family: /*'Plantin', 'Matrix', */ 'MPlantin1', 'Beleren2016', serif;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 #rarity {
@@ -130,15 +130,15 @@ section {
   padding: 0 0.2em;
   font-weight: bold;
   font-size: 1.0em;
-  font-family: /*'Plantin', */ 'Matrix', 'Beleren2016', 'MPlantin1', serif;
+  font-family: /*'Plantin', */ 'Beleren2016', 'Matrix', 'MPlantin1', serif;
 }
 
 #textBox {
   font-weight: 100;
   line-height: 1.0em;
   font-size: 1.2em;
-  margin: 0.6em;
-  font-family: 'EB Garamond', 'Plantin', 'MPlantin1', Georgia, "Times New Roman", serif;
+  margin: 0.4em 0.6em;
+  font-family: 'MPlantin1', 'EB Garamond', 'Plantin', Georgia, "Times New Roman", serif;
   background-color: #FFFFFF44;
   padding: 0.01em 0;
 }
@@ -166,25 +166,31 @@ section {
 
 #bottomBar {
   align-items: initial;
+  background-color: black;
+  margin: 0.4em 0.7em;
 }
 
 #artist {
+  color: white;
   font-size: 0.9em;
-  font-weight: normal;
+  font-weight: 500;
   position: absolute;
-  margin-top: 0;
-  font-family: 'Plantin', serif;
+  margin-top: -0.15em;
+  font-family: sans-serif;
   /*margin-right: auto;*/
 }
 
 #date {
+  color: white;
   font-size: 0.6em;
   position: absolute;
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   /*margin-right: auto;*/
 }
 
 #power {
+  color: white;
+  background-color: ;
   font-size: 1.4em;
   font-weight: bold;
   font-family: 'MPlantin1', Georgia, 'Times New Roman', serif;
