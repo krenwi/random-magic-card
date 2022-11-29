@@ -88,7 +88,8 @@ section {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  /*color: white;*/
+  color: white;
+  background-color: #0005;
 }
 
 #title {
@@ -112,6 +113,9 @@ section {
   line-height: 1.1em !important;
   vertical-align: text-top !important;*/
 }
+/*#cost > .ms-cost {
+  border: black solid 1px;
+}*/
 
 #art {
   margin: 0 0.8em;
@@ -130,7 +134,8 @@ section {
   padding: 0 0.2em;
   font-weight: bold;
   font-size: 1.0em;
-  font-family: /*'Plantin', */ 'Beleren2016', 'Matrix', 'MPlantin1', serif;
+  font-family: sans-serif;
+  line-height: 1.1em;
 }
 
 #textBox {
@@ -171,7 +176,6 @@ section {
 }
 
 #artist {
-  color: white;
   font-size: 0.9em;
   font-weight: 500;
   position: absolute;
@@ -181,7 +185,6 @@ section {
 }
 
 #date {
-  color: white;
   font-size: 0.6em;
   position: absolute;
   margin-top: 1.6em;
@@ -189,8 +192,6 @@ section {
 }
 
 #power {
-  color: white;
-  background-color: ;
   font-size: 1.4em;
   font-weight: bold;
   font-family: 'MPlantin1', Georgia, 'Times New Roman', serif;
