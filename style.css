@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Magic:the Gathering';
-  src: url('/fonts/magic.ttf');
+  src: url('/fonts/magic.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'MPlantin1';
-  src: url('fonts/MPlantin.ttf') format('truetype');
+  src: url('/fonts/MPlantin.ttf') format('truetype');
 }
 @font-face {
   font-family: 'MPlantin1';
-  src: url('fonts/MPlantin-Italic.ttf') format('truetype');
+  src: url('/fonts/MPlantin-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
