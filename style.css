@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'MPlantin1';
-  src: url('/fonts/MPlantin.ttf') format('truetype');
+  src: url('/fonts/MPlantin.woff') format('woff');
 }
 @font-face {
   font-family: 'MPlantin1';
@@ -16,18 +16,18 @@
 
 @font-face {
   font-family: 'Beleren2016';
-  src: url('/fonts/Beleren2016-Bold.ttf') format('truetype');
+  src: url('/fonts/Beleren2016-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'EB Garamond';
   src: url('/fonts/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-  src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/EBGaramond-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Matrix';
-  src: url('/fonts/Matrix-Bold.ttf') format('truetype');
+  src: url('/fonts/Matrix-Bold.woff2') format('woff2');
 }
 
 body {
