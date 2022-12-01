@@ -81,7 +81,10 @@ fetchCard = async (e) => {
   if (card.flavor_text !== undefined) {
     flavour.innerHTML = card.flavor_text
     .replace(/\n/g, '<p />')
-    .replace(/\*/g, '<i>');
+    .replace(/\*/g, '<i>')
+    .replace(/"([^"]*)"/g, "“$1”")
+ //   .replace(/\s"/g, '“')
+ //   .replace(/\S"/g, '”');
   } else {
     flavour.innerHTML = '';
   }
