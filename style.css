@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'MPlantin1';
-  src: url('/fonts/MPlantin.woff') format('woff');
+  src: url('/fonts/MPlantin-Straight.woff2') format('woff2');
 }
 @font-face {
   font-family: 'MPlantin1';
@@ -206,11 +206,14 @@ section {
   font-size: 0.7em !important;
   padding: 0.05em;
   margin: 0.1em;
-  margin-top: 0.4em;
+  /*margin-bottom: 0.4em;*/
   width: 1.1em !important;
   height: 1.1em !important;
   line-height: 1.1em !important;
-  vertical-align: text-top !important;
+  /*vertical-align: text-top !important;*/
+}
+p.ms-cost, p > i.ms-cost {
+  margin-bottom: 0.4em;
 }
 
 i.ms {

@@ -83,6 +83,10 @@ fetchCard = async (e) => {
     .replace(/\n/g, '<p />')
     .replace(/\*/g, '<i>')
     .replace(/"([^"]*)"/g, "“$1”")
+    .replace(/(\w)'(\w)/g, "$1’$2")
+    .replace(/'([^']*)'/g, "‘$1’")
+ //   .replace(/'([^']*)'/g, "‘$1’")
+ //   .replace(/'([^']*)'/g, "$1’")
  //   .replace(/\s"/g, '“')
  //   .replace(/\S"/g, '”');
   } else {
