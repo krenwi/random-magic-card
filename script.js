@@ -54,6 +54,10 @@ fetchCard = async (e) => {
   }
   
   oracleEl.innerHTML = card.oracle_text
+  .replace(/"([^"]*)"/g, "“$1”")
+  .replace(/(\w)'(\w)/g, "$1’$2")
+  .replace(/(\w)'(\s)/g, "$1’$2")
+  .replace(/'([^']*)'/g, "‘$1’")
   .replace(/\n/g, '<p />')
   .replace(/\{T}/g, '<i class="ms ms-tap ms-cost"></i>')
   .replace(/\{W}/g, '<i class="ms ms-w ms-cost"></i>')
@@ -85,13 +89,9 @@ fetchCard = async (e) => {
     .replace(/"([^"]*)"/g, "“$1”")
     .replace(/(\w)'(\w)/g, "$1’$2")
     .replace(/'([^']*)'/g, "‘$1’")
- //   .replace(/'([^']*)'/g, "‘$1’")
- //   .replace(/'([^']*)'/g, "$1’")
- //   .replace(/\s"/g, '“')
- //   .replace(/\S"/g, '”');
   } else {
     flavour.innerHTML = '';
-  }
+  } 
 
   artist.innerHTML = card.artist
   date.innerHTML = card.released_at;
